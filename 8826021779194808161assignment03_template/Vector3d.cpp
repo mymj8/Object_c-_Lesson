@@ -68,6 +68,9 @@ Vector3d Vector3d::Add(const Vector3d& v) const
 Vector3d Vector3d::Sub(double c) const
 {
 	Vector3d v3;
+	v3.mX = this->mX - c;
+	v3.mY = this->mY - c;
+	v3.mZ = this->mZ - c;
 	return v3;
 }
 
